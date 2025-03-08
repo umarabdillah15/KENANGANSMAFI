@@ -1,0 +1,58 @@
+body {
+    background: linear-gradient(to bottom, #6a11cb, #2575fc);
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Galeri Foto */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Tombol Musik */
+.music-button {
+    background-color: pink;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.music-button:hover {
+    background-color: hotpink;
+}
+
+/* Efek Salju */
+.snowflake {
+    position: fixed;
+    top: -10px;
+    color: white;
+    opacity: 0.8;
+    font-size: 16px;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(100vh); }
+}
